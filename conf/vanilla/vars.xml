@@ -430,4 +430,16 @@
   <X-PRE-PROCESS cmd="set" data="video_mute_png=$${images_dir}/default-mute.png"/>
   <X-PRE-PROCESS cmd="set" data="video_no_avatar_png=$${images_dir}/default-avatar.png"/>
 
+    <!-- 基础数据库连接参数 -->
+    <X-PRE-PROCESS cmd="set" data="db_username=root"/>
+    <X-PRE-PROCESS cmd="set" data="db_password=ydyNbHYZDKzpiJF"/>
+    <X-PRE-PROCESS cmd="set" data="db_host=1.12.68.251"/>
+    <X-PRE-PROCESS cmd="set" data="db_port=13306"/>
+    <X-PRE-PROCESS cmd="set" data="db_name=freeswitch"/>
+
+    <!-- MySQL 直连 DSN 字符串 (不需要 ODBC 配置文件) -->
+    <!-- 使用 ODBC 风格的连接字符串格式 -->
+    <!-- 格式: mysql://host=主机;port=端口;db=数据库;user=用户;pass=密码 -->
+    <!-- 用于 switch.conf.xml 的 core-db-dsn 参数 -->
+    <X-PRE-PROCESS cmd="set" data="core_db_dsn=mariadb://Server=$${db_host};Port=$${db_port};Database=$${db_name};Uid=$${db_username};Pwd=$${db_password};"/>
 </include>
