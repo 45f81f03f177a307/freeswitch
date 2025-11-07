@@ -32,7 +32,7 @@ applications/mod_http_cache
 #applications/mod_osp
 #applications/mod_prefix
 #applications/mod_redis
-applications/mod_signalwire
+#applications/mod_signalwire
 applications/mod_sms
 #applications/mod_snapshot
 applications/mod_spandsp
