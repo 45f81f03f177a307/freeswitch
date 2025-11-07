@@ -59,7 +59,7 @@ codecs/mod_g729
 codecs/mod_opus
 #codecs/mod_silk
 #codecs/mod_siren
-#databases/mod_mariadb
+databases/mod_mariadb
 databases/mod_pgsql
 dialplans/mod_dialplan_asterisk
 #dialplans/mod_dialplan_directory
