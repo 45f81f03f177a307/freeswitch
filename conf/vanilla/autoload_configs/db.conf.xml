@@ -1,5 +1,6 @@
 <configuration name="db.conf" description="LIMIT DB Configuration">
   <settings>
     <!--<param name="odbc-dsn" value="dsn:user:pass"/>-->
+      <param name="core-db-dsn" value="mariadb://Server=$${db_host};Port=$${db_port};Database=$${db_name};Uid=$${db_username};Pwd=$${db_password};" />
   </settings>
 </configuration>
