@@ -1,7 +1,7 @@
 <configuration name="odbc_cdr.conf" description="ODBC CDR Configuration">
     <settings>
         <!-- ODBC数据源名称:数据库用户名:数据库密码 -->
-        <param name="odbc-dsn" value="$${mysql_in_to}"/>
+        <param name="odbc-dsn" value="mariadb://Server=$${db_host};Port=$${db_port};Database=$${db_name};Uid=$${db_username};Pwd=$${db_password};"/>
         <!-- global value can be "a-leg", "b-leg", "both" (default is "both") -->
         <param name="log-leg" value="both"/>
         <!-- value can be "always", "never", "on-db-fail" -->
