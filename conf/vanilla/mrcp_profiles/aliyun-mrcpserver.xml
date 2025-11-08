@@ -1,9 +1,9 @@
 <include>
     <profile name="aliyun-mrcpserver" version="2">
         <param name="client-ip" value="$${local_ip_v4}"/>
-        <param name="client-port" value="5060"/>
-        <param name="server-ip" value="192.168.0.10"/>
-        <param name="server-port" value="7010"/>
+        <param name="client-port" value="$${mrcp_client_port}"/>
+        <param name="server-ip" value="$${mrcp_server_ip}"/>
+        <param name="server-port" value="$${mrcp_server_port}"/>
         <param name="resource-location" value=""/>
         <param name="sip-transport" value="tcp"/>
         <param name="sdp-origin" value="Freeswitch"/>
@@ -15,3 +15,6 @@
         <param name="codecs" value="PCMU PCMA L16/96/8000"/>
     </profile>
 </include>
+
+
+

@@ -449,4 +449,9 @@
     <X-PRE-PROCESS cmd="set" data="amqp_username=guest"/>
     <X-PRE-PROCESS cmd="set" data="amqp_password=guest"/>
     <X-PRE-PROCESS cmd="set" data="amqp_binding_key=commandBindingKey"/>
+
+    <!-- MRCP 服务器配置参数 -->
+    <X-PRE-PROCESS cmd="set" data="mrcp_server_ip=192.168.0.10"/>
+    <X-PRE-PROCESS cmd="set" data="mrcp_server_port=7010"/>
+    <X-PRE-PROCESS cmd="set" data="mrcp_client_port=5090"/>
 </include>
