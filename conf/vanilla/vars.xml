@@ -442,4 +442,11 @@
     <!-- 格式: mysql://host=主机;port=端口;db=数据库;user=用户;pass=密码 -->
     <!-- 用于 switch.conf.xml 的 core-db-dsn 参数 -->
     <X-PRE-PROCESS cmd="set" data="core_db_dsn=mariadb://Server=$${db_host};Port=$${db_port};Database=$${db_name};Uid=$${db_username};Pwd=$${db_password};"/>
+
+    <!-- AMQP 连接配置参数 -->
+    <X-PRE-PROCESS cmd="set" data="amqp_hostname=localhost"/>
+    <X-PRE-PROCESS cmd="set" data="amqp_port=5672"/>
+    <X-PRE-PROCESS cmd="set" data="amqp_username=guest"/>
+    <X-PRE-PROCESS cmd="set" data="amqp_password=guest"/>
+    <X-PRE-PROCESS cmd="set" data="amqp_binding_key=commandBindingKey"/>
 </include>

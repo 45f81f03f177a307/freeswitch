@@ -3,19 +3,19 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="localhost"/>
+	  <param name="hostname" value="$${amqp_hostname}"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="guest"/>
-	  <param name="password" value="guest"/>
-	  <param name="port" value="5673"/>
+	  <param name="username" value="$${amqp_username}"/>
+	  <param name="password" value="$${amqp_password}"/>
+	  <param name="port" value="$${amqp_port}"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>
 	<connection name="secondary">
-	  <param name="hostname" value="localhost"/>
+	  <param name="hostname" value="$${amqp_hostname}"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="guest"/>
-	  <param name="password" value="guest"/>
-	  <param name="port" value="5672"/>
+	  <param name="username" value="$${amqp_username}"/>
+	  <param name="password" value="$${amqp_password}"/>
+	  <param name="port" value="$${amqp_port}"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>
       </connections>
@@ -45,17 +45,17 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="localhost"/>
+	  <param name="hostname" value="$${amqp_hostname}"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="guest"/>
-	  <param name="password" value="guest"/>
-	  <param name="port" value="5672"/>
+	  <param name="username" value="$${amqp_username}"/>
+	  <param name="password" value="$${amqp_password}"/>
+	  <param name="port" value="$${amqp_port}"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>
       </connections>
       <params>
 	<param name="exchange-name" value="TAP.Commands"/>
-	<param name="binding_key" value="commandBindingKey"/>
+	<param name="binding_key" value="$${amqp_binding_key}"/>
 	<param name="reconnect_interval_ms" value="1000"/>
 	<param name="queue-passive" value="false"/>
 	<param name="queue-durable" value="false"/>
@@ -68,11 +68,11 @@
     <profile name="default">
       <connections>
 	<connection name="primary">
-	  <param name="hostname" value="localhost"/>
+	  <param name="hostname" value="$${amqp_hostname}"/>
 	  <param name="virtualhost" value="/"/>
-	  <param name="username" value="guest"/>
-	  <param name="password" value="guest"/>
-	  <param name="port" value="5672"/>
+	  <param name="username" value="$${amqp_username}"/>
+	  <param name="password" value="$${amqp_password}"/>
+	  <param name="port" value="$${amqp_port}"/>
 	  <param name="heartbeat" value="0"/>
 	</connection>
       </connections>
