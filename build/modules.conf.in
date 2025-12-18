@@ -16,7 +16,7 @@ applications/mod_dptools
 #applications/mod_easyroute
 applications/mod_enum
 applications/mod_esf
-#applications/mod_esl
+applications/mod_esl
 applications/mod_expr
 applications/mod_fifo
 #applications/mod_fsk
